@@ -1,0 +1,71 @@
+:root {
+  --sanstream-orange: #FF5C00;
+  --sanstream-yellow: #FE9800;
+  --lightest-colour: #ffffff;
+  --darkest-colour: #4D4D4D;
+  --colour-background: var(--lightest-colour);
+  --text-colour: var(--darkest-colour);
+  --text-on-dark-colour: #ffffff;
+  --contrasting-border-colour: var(--darkest-colour);
+  --toned-down-border-colour: #ABABAB;
+  --light-grey-fill:#E3E3E3;
+  --middle-grey-fill:#C4C4C4;
+  --dark-grey-fill:#878787;
+
+  --base-size: 20px;
+  --min-content-width: calc(20px * 4 * 3 + 20px * 2 * 2); /* base-size * 4 (= column-width) * 3 columns */
+  --mobile-breakpoint: 920px;
+}
+
+*,
+*::after,
+*::before
+{
+ box-sizing: border-box; 
+}
+
+body {
+  margin:0;
+  padding:0;
+  line-height: 1.5em;
+  background-color: var(--colour-background);
+  min-height: 100vh;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+.sanstream-intro-text {
+  font-family: 'Armata', "Helvetica", sans-serif;
+  color: var(--text-colour);
+  font-size: 100%;
+}
+
+.sanstream-heading {
+  font-family: 'Armata', "Helvetica", sans-serif;
+  color: var(--text-colour);
+  line-height: 1.4em;
+}
+
+h1.sanstream-heading {
+  font-size: 1.5rem;
+}
+
+h2.sanstream-heading {
+  font-size: 1.2rem;
+}
+
+.sanstream-special-text {
+  font-family: 'Fira Code', monospace;
+  color: var(--text-colour);
+}
+
+.sanstream-body-text {
+  font-family: 'Montserrat', serif;
+  color: var(--text-colour);
+}
+
+.sanstream-no-list-styles {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}

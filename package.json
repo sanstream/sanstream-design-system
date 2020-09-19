@@ -2,15 +2,24 @@
   "name": "sanstream-design-system",
   "version": "0.1.0",
   "private": true,
+  "main": "/src/main.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docs": "vue-cli-service styleguidist",
+    "docs:build": "vue-cli-service styleguidist:build"
   },
   "dependencies": {
+    "@bankai/eslint-config": "^0.2.0",
+    "@sanity/block-content-to-hyperscript": "^2.0.10",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "d3": "^6.1.1",
+    "dialog-polyfill": "^0.5.3",
+    "moment": "^2.28.0",
+    "sanity-blocks-vue-component": "^0.1.0",
+    "theo": "^8.1.5",
+    "vue": "^2.6.11",
+    "vue-types": "^2.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -25,6 +34,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "vue-cli-plugin-styleguidist": "^4.32.3",
     "vue-template-compiler": "^2.6.11"
   }
 }
