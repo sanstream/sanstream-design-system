@@ -5,9 +5,8 @@
 </template>
 
 <script>
-import VueTypes from 'vue-types'
 export default {
-  name: 'StandardParagraph'
+  name: 'StandardParagraph',
 }
 </script>
 

@@ -48,7 +48,7 @@ export default {
     SerializedRawContent,
     FramedImage,
     PostMetaData,
-    SpecialLink
+    SpecialLink,
   },
 
   props: {
@@ -57,8 +57,8 @@ export default {
     mainImage: VueTypes.object,
     postBody: VueTypes.array,
     publishedOn: VueTypes.string.required,
-    partOfCategories: VueTypes.array.required
-  }
+    partOfCategories: VueTypes.array.required,
+  },
 }
 </script>
 

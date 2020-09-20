@@ -12,14 +12,14 @@ export default {
   name: 'PostMetaData',
   props: {
     publishedOn: VueTypes.string.required,
-    partOfCategories: VueTypes.array.required
+    partOfCategories: VueTypes.array.required,
   },
 
   data () {
     return {
-      formatDate
+      formatDate,
     }
-  }
+  },
 }
 </script>
 

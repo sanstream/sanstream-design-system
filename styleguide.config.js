@@ -1,4 +1,4 @@
-const { path } = require("d3")
+const { path, } = require('d3')
 
 const path2 = require('path')
 module.exports = {
@@ -17,12 +17,12 @@ module.exports = {
   sections: [
     {
       name: 'Elements',
-      components: 'src/components/elements/[A-Z]*.vue'
+      components: 'src/components/elements/[A-Z]*.vue',
     },
     {
       name: 'Patterns',
-      components: 'src/components/patterns/[A-Z]*.vue'
-    }
+      components: 'src/components/patterns/[A-Z]*.vue',
+    },
   ],
   // webpackConfig: {
   //   // custom config goes here
@@ -34,8 +34,8 @@ module.exports = {
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Armata&family=Fira+Code&family=Montserrat:wght@500&display=swap',
-        },        
-      ]
-    }
-  }
+        },
+      ],
+    },
+  },
 }

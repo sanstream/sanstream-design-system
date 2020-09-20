@@ -41,8 +41,8 @@ import VueTypes from 'vue-types'
 export default {
   name: 'TextAndPictureSequence',
   props: {
-    sequence: VueTypes.array
-  }
+    sequence: VueTypes.array,
+  },
 }
 </script>
 

@@ -14,10 +14,10 @@ export default {
   name: 'Button',
   props: {
     variant: VueTypes.oneOf([
-      'textual'
+      'textual',
     ]),
-    onClick: VueTypes.func.isRequired
-  }
+    onClick: VueTypes.func.isRequired,
+  },
 }
 </script>
 

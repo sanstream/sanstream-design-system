@@ -20,7 +20,7 @@ export default {
   name: 'SerializedRawContent',
 
   components: {
-    BlockContent
+    BlockContent,
   },
 
   computed: {
@@ -29,17 +29,17 @@ export default {
         types: {
           block: StandardParagraph,
           image: StandardImage,
-          code: CodeExample
+          code: CodeExample,
         },
         marks: {
-          link: StandardLink
-        }
+          link: StandardLink,
+        },
       }
-    }
+    },
   },
 
   props: {
-    rawContent: VueTypes.array.required
-  }
+    rawContent: VueTypes.array.required,
+  },
 }
 </script>

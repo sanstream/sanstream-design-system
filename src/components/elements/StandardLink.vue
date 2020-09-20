@@ -7,8 +7,8 @@ import VueTypes from 'vue-types'
 export default {
   name: 'StandardLink',
   props: {
-    href: VueTypes.string.required
-  }
+    href: VueTypes.string.required,
+  },
 }
 </script>
 

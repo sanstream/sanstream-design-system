@@ -12,7 +12,7 @@ export default {
   name: 'StandardImage',
 
   components: {
-    FramedImage
+    FramedImage,
   },
 
   props: {
@@ -20,21 +20,21 @@ export default {
      * asset is the sanity.io image asset
      * passed to the serialiser.
      */
-    asset: VueTypes.object
+    asset: VueTypes.object,
   },
 
   computed: {
     imageUrl () {
       return getImageUrl({
         node: {
-          asset: this.asset
+          asset: this.asset,
         },
         options: {
           projectId: 'he47alh5',
-          dataset: 'production'
-        }
+          dataset: 'production',
+        },
       })
-    }
-  }
+    },
+  },
 }
 </script>

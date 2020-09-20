@@ -14,12 +14,6 @@
           :publishedOn="postData.publishedOn"
         />
       </header>
-
-      <!-- <FramedImage
-        v-if="mainImage"
-        class="main-image"
-        :src="mainImage.asset.url"
-      /> -->
       <SerializedRawContent
         :rawContent="postData._rawContent"
       />
@@ -29,9 +23,7 @@
 
 <script>
 import SerializedRawContent from './SerializedRawContent'
-import FramedImage from '../elements/FramedImage'
 import PostMetaData from '../elements/PostMetaData'
-import SpecialLink from '../elements/SpecialLink'
 import VueTypes from 'vue-types'
 
 export default {
@@ -39,14 +31,12 @@ export default {
 
   components: {
     SerializedRawContent,
-    FramedImage,
     PostMetaData,
-    SpecialLink
   },
 
   props: {
-    postData: VueTypes.object.required
-  }
+    postData: VueTypes.object.required,
+  },
 }
 </script>
 

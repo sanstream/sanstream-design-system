@@ -46,22 +46,22 @@ export default {
   name: 'Pagination',
 
   components: {
-    SpecialLink
+    SpecialLink,
   },
 
   props: {
     pageInfo: VueTypes.object.required,
-    basePath: VueTypes.string.required
+    basePath: VueTypes.string.required,
   },
 
   computed: {
     links () {
       return {
         previous: this.pageInfo.hasPreviousPage ? {
-          link: this.pageInfo.currentPage - 1
+          link: this.pageInfo.currentPage - 1,
         } : null,
         next: this.pageInfo.hasNextPage ? {
-          link: this.pageInfo.currentPage + 1
+          link: this.pageInfo.currentPage + 1,
         } : null,
         pages: Array.from(Array(this.pageInfo.totalPages))
           .map((page, index) => {
@@ -69,12 +69,12 @@ export default {
             const link = index + 1
             return {
               link,
-              pageNumber
+              pageNumber,
             }
-          })
+          }),
       }
-    }
-  }
+    },
+  },
 }
 </script>
 

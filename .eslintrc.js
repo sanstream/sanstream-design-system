@@ -2,22 +2,22 @@ module.exports = {
   root: true,
 
   env: {
-    node: true
+    node: true,
   },
 
   extends: [
-    '@bankai',
     'plugin:vue/essential',
-    '@vue/standard'
+    '@vue/standard',
+    '@bankai',
   ],
 
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
 
   rules: {
     'no-console': 'off',
     'no-debugger': 'off',
-    'vue/html-indent': 'error'
-  }
+    'vue/html-indent': 'error',
+  },
 }

@@ -80,7 +80,7 @@ import Icon from '../elements/Icon'
 
 const arrayOfLinks = VueTypes.arrayOf(VueTypes.shape({
   href: VueTypes.string,
-  label: VueTypes.string
+  label: VueTypes.string,
 }))
 
 export default {
@@ -88,16 +88,16 @@ export default {
   components: {
     SpecialLink,
     Button,
-    Icon
+    Icon,
   },
   props: {
     collectionPages: arrayOfLinks,
-    singlePages: arrayOfLinks
+    singlePages: arrayOfLinks,
   },
 
   data () {
     return {
-      isDialogVisible: false
+      isDialogVisible: false,
     }
   },
 
@@ -123,10 +123,10 @@ export default {
         this.$refs.dialog.classList.remove('hide')
         this.$refs.dialog.close()
       }, {
-        once: true
+        once: true,
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -249,10 +249,10 @@ export default {
 </script>
 
 <template>
-  <NavigationMenu
-    :collectionPages="collectionPages"
-    :singlePages="singlePages"
-  />
+<NavigationMenu
+  :collectionPages="collectionPages"
+  :singlePages="singlePages"
+/>
 </template>
 ```
 </docs>

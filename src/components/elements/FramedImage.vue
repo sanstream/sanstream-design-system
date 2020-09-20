@@ -16,8 +16,8 @@ export default {
   name: 'FramedImage',
   props: {
     src: VueTypes.string.required,
-    alt: VueTypes.string.required
-  }
+    alt: VueTypes.string.required,
+  },
 }
 </script>
 

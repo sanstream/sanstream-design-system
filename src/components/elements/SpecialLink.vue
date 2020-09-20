@@ -23,14 +23,18 @@ export default {
   name: 'SpecialLink',
 
   components: {
-    PointerTriangle
+    PointerTriangle,
   },
 
   props: {
     href: VueTypes.string.required,
-    triangleToText: VueTypes.oneOf(['left', 'right', 'none']).def('right'),
-    hasDarkParent: VueTypes.bool.def(false)
-  }
+    triangleToText: VueTypes.oneOf([
+      'left',
+      'right',
+      'none',
+    ]).def('right'),
+    hasDarkParent: VueTypes.bool.def(false),
+  },
 }
 </script>
 
@@ -45,10 +49,6 @@ a[href].special-link {
 
 a[href].special-link.hasDarkParent {
   color: var(--text-on-darkest-colour);
-}
-
-a[href].special-link.hasDarkParent svg path {
-  /* stroke: var(--text-on-darkest-colour); */
 }
 
 a[href].special-link .displayed-text {

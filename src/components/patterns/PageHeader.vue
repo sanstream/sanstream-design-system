@@ -25,7 +25,7 @@ export default {
   name: 'PageHeader',
   components: {
     TopDecoration,
-    NavigationMenu
+    NavigationMenu,
   },
 
   data () {
@@ -33,17 +33,17 @@ export default {
       linksToCollections: [
         {
           href: '/blog/',
-          label: 'blog'
-        }
+          label: 'blog',
+        },
       ],
       linksToSinglePages: [
         {
           href: '/cv/',
-          label: 'my CV'
-        }
-      ]
+          label: 'my CV',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

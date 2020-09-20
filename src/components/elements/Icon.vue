@@ -16,7 +16,7 @@ export default {
 
   components: {
     Menu,
-    CloseCross
+    CloseCross,
   },
 
   props: {
@@ -25,8 +25,8 @@ export default {
      * Used as a label to make sure the icon
      * is accessible.
      */
-    titleText: VueTypes.string.required
-  }
+    titleText: VueTypes.string.required,
+  },
 }
 </script>
 

@@ -102,8 +102,8 @@ import StandardLink from '../elements/StandardLink'
 export default {
   name: 'PageFooter',
   components: {
-    StandardLink
-  }
+    StandardLink,
+  },
 }
 </script>
 
