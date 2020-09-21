@@ -36,7 +36,6 @@ export default {
     vertical-align: middle;
     position: relative;
     top: -1px;
-    pointer-events: none;
     stroke: currentColor;
     fill: currentColor;
   }
@@ -46,6 +45,7 @@ export default {
 ```jsx
 <Icon
   id="Menu"
+  titleText="menu"
 />
 ```
 </docs>

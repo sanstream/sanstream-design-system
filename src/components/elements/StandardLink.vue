@@ -1,9 +1,18 @@
 <template>
-  <a :href="href"><slot /></a>
+  <a
+    class="sanstream-body-text"
+    :href="href"><slot /></a>
 </template>
 
 <script>
 import VueTypes from 'vue-types'
+
+/**
+ * Is used for links within text content.
+ *
+ * Is also used for displaying serialised content
+ * coming in from Sanity.io CMS.
+ */
 export default {
   name: 'StandardLink',
   props: {
@@ -29,3 +38,11 @@ a[href]:hover {
   border-bottom: 2px solid var(--sanstream-orange);
 }
 </style>
+
+<docs>
+```jsx
+<StandardLink
+  href="https://duckduckgo.com/"
+>link text</StandardLink>
+```
+</docs>

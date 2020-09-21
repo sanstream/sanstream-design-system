@@ -15,3 +15,20 @@
     />
   </svg>
 </template>
+
+<script>
+/**
+ * PointerTriangle is a visual decorative element and therefore has no semantic meaning,
+ * instead that it indicates that user will move away from a state to a new one,
+ * when they click on in it. Using with links and buttons.
+ */
+export default {
+  name: 'PointerTriangle',
+}
+</script>
+
+<docs>
+```jsx
+<PointerTriangle/>
+```
+</docs>

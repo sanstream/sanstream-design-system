@@ -19,6 +19,10 @@
 import VueTypes from 'vue-types'
 import PointerTriangle from './PointerTriangle'
 
+/**
+ * This component is used for links that are also
+ * call to actions.
+ */
 export default {
   name: 'SpecialLink',
 
@@ -48,7 +52,7 @@ a[href].special-link {
   }
 
 a[href].special-link.hasDarkParent {
-  color: var(--text-on-darkest-colour);
+  color: var(--text-on-dark-colour);
 }
 
 a[href].special-link .displayed-text {
@@ -101,3 +105,62 @@ a[href].special-link:hover svg path {
   fill: var(--sanstream-yellow);
 }
 </style>
+
+<docs>
+```jsx
+<div>
+  <SpecialLink
+    triangleToText="left"
+    href="https://duckduckgo.com"
+  >
+    arrow to the left
+  </SpecialLink>
+  <br />
+  <SpecialLink
+    triangleToText="none"
+    href="https://duckduckgo.com"
+  >
+    no arrow
+  </SpecialLink>
+  <br />
+  <SpecialLink
+    triangleToText="right"
+    href="https://duckduckgo.com"
+  >
+    arrow to the right
+  </SpecialLink>
+  <br />
+</div>
+```
+
+```jsx
+<div
+  style="backgroundColor: var(--darkest-colour)"
+>
+  <SpecialLink
+    triangleToText="left"
+    href="https://duckduckgo.com"
+    :hasDarkParent="true"
+  >
+    arrow to the left
+  </SpecialLink>
+  <br />
+  <SpecialLink
+    triangleToText="none"
+    href="https://duckduckgo.com"
+    :hasDarkParent="true"
+  >
+    no arrow
+  </SpecialLink>
+  <br />
+  <SpecialLink
+    triangleToText="right"
+    href="https://duckduckgo.com"
+    :hasDarkParent="true"
+  >
+    arrow to the right
+  </SpecialLink>
+  <br />
+</div>
+```
+</docs>

@@ -1,7 +1,7 @@
 <template>
   <figure>
     <div>
-      <g-image
+      <img
         :src="src"
         :alt="alt"
       />
@@ -12,6 +12,9 @@
 <script>
 import VueTypes from 'vue-types'
 
+/**
+ * Standard element to display images with.
+ */
 export default {
   name: 'FramedImage',
   props: {
@@ -39,3 +42,12 @@ img {
   min-width: 100%;
 }
 </style>
+
+<docs>
+```jsx
+<FramedImage
+  src="http://placekitten.com/200/200"
+  alt="A random kitten"
+/>
+```
+</docs>
