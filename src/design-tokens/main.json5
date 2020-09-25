@@ -1,0 +1,58 @@
+{
+  "props": [
+    {
+      name: "sanstream-orange",
+      type: "color",
+      value: "#FF5C00",
+      category: "brand"
+    },
+    {
+      name: "sanstream-yellow",
+      type: "color",
+      value: "#FE9800",
+      category: "brand"
+    },
+    {
+      name: "lightest-colour",
+      type: "color",
+      value: "#ffffff",
+      category: "brand"
+    },
+    {
+      name: "darkest-colour",
+      type: "color",
+      value: "#4D4D4D",
+      category: "brand"
+    },
+    {
+      name: "text-on-dark-colour",
+      type: "color",
+      value: "#ffffff",
+      category: "brand"
+    },
+    {
+      name: "toned-down-colour",
+      type: "color",
+      value: "#ABABAB",
+      category: "border"
+    },
+    {
+      name: "light-grey-fill",
+      type: "color",
+      value: "#E3E3E3",
+      category: "brand"
+    },
+    {
+      name: "middle-grey-fill",
+      type: "color",
+      value: "#C4C4C4",
+      category: "background"
+    },
+    {
+      name: "dark-grey-fill",
+      type: "color",
+      value: "#878787",
+      category: "background"
+    },
+  ]
+}
