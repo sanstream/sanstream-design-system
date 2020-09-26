@@ -1,5 +1,3 @@
-const { path, } = require('d3')
-
 const path2 = require('path')
 module.exports = {
   title: 'Studio Sanstream Design System',
@@ -11,18 +9,34 @@ module.exports = {
   },
   // defaultExample: true,
   require: [
+    path2.join(__dirname, 'src/design-tokens/generateCssVariables.js'),
     path2.join(__dirname, 'src/tokens.css'),
     path2.join(__dirname, 'src/layouts.css'),
   ],
   sections: [
     {
+      name: 'Design Tokens',
+      components: 'src/design-tokens/docs/Color.vue',
+    },
+    {
       name: 'Elements',
       components: 'src/components/elements/[A-Z]*.vue',
     },
   ],
-  // webpackConfig: {
-  //   // custom config goes here
-  // },
+  webpackConfig: {
+    module: {
+      rules: [
+        {
+          test: /\.json5$/i,
+          loader: 'json5-loader',
+          options: {
+            esModule: true,
+          },
+          type: 'javascript/auto',
+        },
+      ],
+    },
+  },
   exampleMode: 'expand',
   template: {
     head: {

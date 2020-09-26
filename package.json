@@ -7,29 +7,22 @@
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "docs": "vue-cli-service styleguidist",
-    "tokens": "theo ./src/design-tokens/main.json5 --transform web --format custom-properties.css,module.js,html --dest ./generated-tokens",
-    "tokens:onchange": "onchange \"./src/design-tokens/*.json5\" -- yarn generate-web-tokens",
-    "docs:tokens": "yarn tokens && concurrently \"yarn tokens:onchange\" \"yarn docs\"",
-    "docs:build": "vue-cli-service styleguidist:build",
-    "docs:tokens-and-build": "yarn tokens && yarn docs:build"
+    "docs:build": "vue-cli-service styleguidist:build"
   },
   "dependencies": {
-    "@bankai/eslint-config": "^0.2.0",
+    "@bankai/eslint-config": "0.2.2-rc.1",
     "@sanity/block-content-to-hyperscript": "^2.0.10",
     "babel-plugin-prismjs": "^2.0.1",
-    "concurrently": "^5.3.0",
     "core-js": "^3.6.5",
     "d3": "^6.1.1",
     "dialog-polyfill": "^0.5.3",
+    "lodash.orderby": "^4.6.0",
     "moment": "^2.28.0",
-    "onchange": "^7.0.2",
     "optimist": "^0.6.1",
     "prismjs": "^1.21.0",
     "sanity-blocks-vue-component": "^0.1.0",
-    "theo": "^8.1.5",
     "vue": "^2.6.11",
-    "vue-types": "^2.0.1",
-    "yarn-run-all": "^3.1.1"
+    "vue-types": "^2.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
