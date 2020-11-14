@@ -1,6 +1,7 @@
 :root {
   --sanstream-orange: #FF5C00;
   --sanstream-yellow: #FE9800;
+  --sanstream-orange-on-white: #ab3e01;
   --lightest-colour: #ffffff;
   --darkest-colour: #4D4D4D;
   --colour-background: var(--lightest-colour);

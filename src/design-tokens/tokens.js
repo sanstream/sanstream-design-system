@@ -14,33 +14,37 @@ const colours = {
   'sanstream-orange': {
     value: colourPalette.brandMain.value,
     category: 'brand',
+    comment: 'Main colour used in logo\'s and icons',
   },
   'sanstream-yellow': {
     value: colourPalette.brandSupport.value,
     category: 'brand',
+    comment: 'Supporting colour used in logo\'s and icons',
   },
   'range-orange': {
     value: colourPalette.brandMain.value,
     category: 'data-visualisation',
+    comment: 'Used for colour ranges, in combination with another range colour.',
   },
   'range-yellow': {
     value: colourPalette.brandSupport.value,
     category: 'data-visualisation',
+    comment: 'Used for colour ranges, in combination with another range colour.',
   },
   'range-red': {
     value: '#E8290C',
     category: 'data-visualisation',
-    comment: 'Colouring used colour ranges in visualisations.',
+    comment: 'Used for colour ranges, in combination with another range colour.',
   },
   'range-magenta': {
     value: '#FE0072',
     category: 'data-visualisation',
-    comment: 'Colouring used colour ranges in visualisations.',
+    comment: 'Used for colour ranges, in combination with another range colour.',
   },
   'range-green': {
     value: '#99c511',
     category: 'data-visualisation',
-    comment: 'Colouring used colour ranges in visualisations.',
+    comment: 'Used for colour ranges, in combination with another range colour.',
   },
   'lightest-colour': {
     value: '#ffffff',

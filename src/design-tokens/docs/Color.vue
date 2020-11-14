@@ -1,33 +1,41 @@
 <template>
   <div class="colors">
-    <template
-      v-for="(prop, index) in orderedColorTokens"
+    <section
+      v-for="category in colorTokensPerCategory"
+      :key="category.category"
     >
-      <figure
-        :key="index"
-        class="color"
+      <h2
+        class="sanstream-heading"
+      >{{category.category}}</h2>
+      <div
       >
-        <div
-          class="swatch"
-          :style="{ backgroundColor: prop.value }"/>
-        <figcaption class="sanstream-body-text">
-          <span>
-            <strong>{{prop.name}}</strong>
-          </span>
-          <span>
-            <em>Category: </em>
-            <strong>{{prop.category}}</strong>
-          </span>
-          <span>
-            <em>HEX: </em>
-            <code class="sanstream-special-text">{{prop.value}}</code>
-          </span>
-          <p>
-            {{prop.comment}}
-          </p>
-        </figcaption>
-      </figure>
-    </template>
+        <figure
+          v-for="(prop, index) in category.colours"
+          :key="index"
+          class="color"
+        >
+          <div
+            class="swatch"
+            :style="{ backgroundColor: prop.value }"/>
+          <figcaption class="sanstream-body-text">
+            <span>
+              <strong>{{prop.name}}</strong>
+            </span>
+            <span>
+              <em>Category: </em>
+              <strong>{{prop.category}}</strong>
+            </span>
+            <span>
+              <em>HEX: </em>
+              <code class="sanstream-special-text">{{prop.value}}</code>
+            </span>
+            <p>
+              {{prop.comment}}
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -37,9 +45,6 @@ import {
 } from '../tokens'
 import orderBy from 'lodash.orderby'
 
-/**
- * Colours usage
- */
 export default {
   name: 'Color',
   computed: {
@@ -55,6 +60,22 @@ export default {
       const byCategoryAndName = orderBy(byName, 'category')
       return byCategoryAndName
     },
+
+    colorTokensPerCategory () {
+      const coloursInArray = Object.keys(colours).map(name => {
+        return {
+          ...colours[name],
+          name,
+        }
+      })
+      const uniqueCategories = Array.from(new Set(coloursInArray.map(colour => colour.category)))
+      return uniqueCategories.sort().map(category => {
+        return {
+          category,
+          colours: coloursInArray.filter(colour => colour.category === category),
+        }
+      })
+    },
   },
 }
 </script>
@@ -64,8 +85,11 @@ export default {
   margin-top: 1em;
   display: block;
   width: 100%;
-  display: grid;
   max-width: 1200px;
+}
+
+.colors section div {
+  display: grid;
   align-content: stretch;
   justify-content: left;
   grid-template-columns:
