@@ -36,7 +36,7 @@ export default {
 </script>
 
 <docs>
-```vue
+```jsx
 <script>
 export default {
   data () {
