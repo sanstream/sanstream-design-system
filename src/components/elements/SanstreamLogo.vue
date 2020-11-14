@@ -31,6 +31,49 @@
   </svg>
 </template>
 
+<script>
+export default {
+  name: 'SanstreamLogo',
+}
+</script>
+
+<style scoped>
+@keyframes drawSpiral {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+:root {
+  --sanstream-spiral-animation-duration: 1.5s;
+  --sanstream-spiral-animation-delay: 2s;
+  --sanstream-spiral-animation-ease: ease-in-out;
+}
+
+#orange-strokes .long-stroke {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation:
+    drawSpiral
+    var(--sanstream-spiral-animation-duration)
+    var(--sanstream-spiral-animation-delay)
+    var(--sanstream-spiral-animation-ease)
+    forwards
+  ;
+}
+#yellow-strokes .long-stroke {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation:
+    drawSpiral
+    var(--sanstream-spiral-animation-duration)
+    calc(var(--sanstream-spiral-animation-delay) + 0.5s)
+    var(--sanstream-spiral-animation-ease)
+    forwards
+  ;
+}
+</style>
+
 <docs>
 The sanstream logo in SVG form. You can add extra content
 to make the logo more accessible.
