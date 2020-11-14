@@ -1,5 +1,7 @@
 import './tokens.css'
 import './layouts.css'
+import StandardLink from './components/elements/StandardLink'
+import StandardParagraph from './components/elements/StandardParagraph'
 import CodeExample from './components/elements/CodeExample'
 
 /**
@@ -33,6 +35,11 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 // Finally export as default
 export default SanstreamDesignSystem
+
+// some components are exposed directly to be used in serilisation of content.
+// This needs access to the components directly.
 export {
+  StandardLink,
+  StandardParagraph,
   CodeExample
 }
