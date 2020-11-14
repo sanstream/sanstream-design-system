@@ -9,13 +9,8 @@ module.exports = {
     '@bankai/eslint-config/vue',
   ],
 
-  parserOptions: {
-    parser: 'babel-eslint',
-  },
-
   rules: {
     'no-console': 'off',
     'no-debugger': 'off',
-    'vue/html-indent': 'error',
   },
 }
