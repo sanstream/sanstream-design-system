@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 a[href] {
-  color: var(--sanstream-orange);
+  color: var(--sanstream-orange-on-white);
   text-decoration: none;
   display: inline;
   border-bottom: 1px solid transparent;
@@ -33,7 +33,7 @@ a[href] {
 a[href]:focus,
 a[href]:hover {
   outline: none;
-  color: var(--sanstream-orange);
+  color: var(--sanstream-orange-on-white);
   text-decoration: none;
   border-bottom: 2px solid var(--sanstream-orange);
 }
