@@ -875,7 +875,7 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@bankai/eslint-config@0.2.2-rc.1":
+"@bankai/eslint-config@0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@bankai/eslint-config/-/eslint-config-0.2.2.tgz#a8fd822ec1b2d454ce7abf23db33152d9fdac667"
   integrity sha512-U6oEigiwJZHDmF9aDvZ2QVYb2UaJdLTZnJLNHpVaC1KVBu0vMJysAWllJGwWdW4Lvo4qg6ruQthet5UXLccCUA==

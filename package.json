@@ -1,6 +1,6 @@
 {
   "name": "sanstream-design-system",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "main": "/src/main.js",
   "scripts": {
@@ -10,7 +10,6 @@
     "docs:build": "vue-cli-service styleguidist:build"
   },
   "dependencies": {
-    "@bankai/eslint-config": "0.2.2-rc.1",
     "@sanity/block-content-to-hyperscript": "^2.0.10",
     "babel-plugin-prismjs": "^2.0.1",
     "core-js": "^3.6.5",
@@ -25,7 +24,7 @@
     "vue-types": "^2.0.1"
   },
   "devDependencies": {
-    "@bankai/eslint-config@0.2.2-rc.1": "^0.1.1",
+    "@bankai/eslint-config": "0.2.2",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-e2e-cypress": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
