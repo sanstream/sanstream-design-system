@@ -1,14 +1,14 @@
-import 'tokens.css'
-import 'layouts.css'
+import './tokens.css'
+import './layouts.css'
+import CodeExample from './components/elements/CodeExample'
+
 /**
  * This file exports the Design System.
  */
 
 // Define contexts to require
 const contexts = [
-  require.context('/src/elements/', true, /\.vue$/),
-  require.context('/src/patterns/', true, /\.vue$/),
-  require.context('/src/templates/', true, /\.vue$/),
+  require.context('./components/elements/', true, /\.vue$/),
 ]
 
 // Define components
@@ -20,7 +20,9 @@ contexts.forEach(context => {
 // Install the above defined components
 const SanstreamDesignSystem = {
   install (Vue) {
-    components.forEach(component => Vue.component(component.name, component))
+    components.forEach(component => {
+      return Vue.component(component.name, component)
+    })
   },
 }
 
@@ -31,3 +33,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 // Finally export as default
 export default SanstreamDesignSystem
+export {
+  CodeExample
+}
