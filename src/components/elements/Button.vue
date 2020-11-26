@@ -45,19 +45,3 @@ button.variant-textual:hover * {
     drop-shadow(0px 0px 4px var(--sanstream-yellow));
 }
 </style>
-
-<docs>
-```jsx
-<div>
-<Button
-  variant="textual"
-  :onClick="() => {}"
->
-  <Icon
-    id="Menu"
-    titleText="Open menu"
-  />
-</Button>
-</div>
-```
-</docs>

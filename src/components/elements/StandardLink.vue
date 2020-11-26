@@ -38,11 +38,3 @@ a[href]:hover {
   border-bottom: 2px solid var(--sanstream-orange);
 }
 </style>
-
-<docs>
-```jsx
-<StandardLink
-  href="https://duckduckgo.com/"
->link text</StandardLink>
-```
-</docs>

@@ -26,9 +26,3 @@ export default {
   name: 'PointerTriangle',
 }
 </script>
-
-<docs>
-```jsx
-<PointerTriangle/>
-```
-</docs>

@@ -49,35 +49,3 @@ code {
   font-size: 100%;
 }
 </style>
-
-<docs>
-```jsx
-<script>
-export default {
-  data () {
-    return {
-      codeSample: `
-nav > span {
-    display: inline-block;
-    padding: 2px 4px 0 4px;
-    border-bottom: 1px dashed var(--contrasting-border-colour);
-    background-color: var(--light-grey-fill);
-  }
-
-  nav > * {
-    margin: 0 0.5em;
-  }
-      `,
-    }
-  },
-}
-</script>
-
-<template>
-<CodeExample
-  :code="codeSample"
-  language="css"
-/>
-</template>
-```
-</docs>

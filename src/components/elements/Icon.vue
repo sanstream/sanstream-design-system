@@ -40,12 +40,3 @@ export default {
     fill: currentColor;
   }
 </style>
-
-<docs>
-```jsx
-<Icon
-  id="Menu"
-  titleText="menu"
-/>
-```
-</docs>

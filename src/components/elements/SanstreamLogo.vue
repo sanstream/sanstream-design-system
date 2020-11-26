@@ -32,6 +32,9 @@
 </template>
 
 <script>
+/**
+ * The sanstream logo is in SVG form. You can add extra content to make the logo more accessible.
+ */
 export default {
   name: 'SanstreamLogo',
 }
@@ -73,14 +76,3 @@ export default {
   ;
 }
 </style>
-
-<docs>
-The sanstream logo in SVG form. You can add extra content
-to make the logo more accessible.
-
-```jsx
-<SanstreamLogo>
-  <title>to the main page</title>
-</SanstreamLogo>
-```
-</docs>
