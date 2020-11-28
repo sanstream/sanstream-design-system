@@ -16,6 +16,12 @@ const colours = {
     category: 'brand',
     comment: 'Main colour used in logo\'s and icons',
   },
+  'sanstream-orange-on-white': {
+    value: '#ab3e01',
+    category: 'text',
+    comment: `variant of sanstream-orange that contrasts enough
+    with white to be legible. Best used for links.`,
+  },
   'sanstream-yellow': {
     value: colourPalette.brandSupport.value,
     category: 'brand',

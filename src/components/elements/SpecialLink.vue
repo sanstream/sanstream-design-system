@@ -59,7 +59,7 @@ a[href].special-link .displayed-text {
   display: inline-block;
   text-transform: capitalize;
   padding: 0 0.25em;
-  border-bottom: 1px solid var(--sanstream-yellow);
+  border-bottom: 1px solid var(--colour-sanstream-yellow);
 }
 
 a[href].special-link:focus {
@@ -68,7 +68,7 @@ a[href].special-link:focus {
 
 a[href].special-link:focus .displayed-text,
 a[href].special-link:hover .displayed-text {
-  border-bottom: 2px solid var(--sanstream-orange);
+  border-bottom: 2px solid var(--colour-sanstream-orange);
 }
 
 a[href].special-link svg {
@@ -90,18 +90,18 @@ a[href].special-link.right svg {
 a[href].special-link svg path {
   transition: fill 0.1s linear;
   stroke: none;
-  fill: var(--sanstream-orange);
+  fill: var(--colour-sanstream-orange);
 }
 
 a[href].special-link:focus svg,
 a[href].special-link:hover svg {
   filter:
-    /* drop-shadow(0px 0px 1px var(--sanstream-yellow)) */
-    drop-shadow(0px 0px 6px var(--sanstream-yellow));
+    /* drop-shadow(0px 0px 1px var(--colour-sanstream-yellow)) */
+    drop-shadow(0px 0px 6px var(--colour-sanstream-yellow));
 }
 
 a[href].special-link:focus svg path,
 a[href].special-link:hover svg path {
-  fill: var(--sanstream-yellow);
+  fill: var(--colour-sanstream-yellow);
 }
 </style>

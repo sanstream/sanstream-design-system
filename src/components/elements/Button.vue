@@ -31,7 +31,7 @@ button.variant-textual {
   border: 0;
   box-shadow: none;
   background-color: inherit;
-  color: var(--sanstream-orange);
+  color: var(--colour-sanstream-orange);
 }
 
 button.variant-textual:focus {
@@ -41,7 +41,7 @@ button.variant-textual:focus {
 button.variant-textual:focus *,
 button.variant-textual:hover * {
   filter:
-    drop-shadow(0px 0px 1px var(--sanstream-yellow))
-    drop-shadow(0px 0px 4px var(--sanstream-yellow));
+    drop-shadow(0px 0px 1px var(--colour-sanstream-yellow))
+    drop-shadow(0px 0px 4px var(--colour-sanstream-yellow));
 }
 </style>

@@ -15,7 +15,7 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5em;
-  background-color: var(--colour-background);
+  background-color: var(--colour-lightest-colour);
   min-height: 100vh;
   font-size: 100%;
   overflow-x: hidden;
@@ -23,13 +23,13 @@ body {
 
 .sanstream-intro-text {
   font-family: 'Armata', "Helvetica", sans-serif;
-  color: var(--text-colour);
+  color: var(--colour-text-colour);
   font-size: 100%;
 }
 
 .sanstream-heading {
   font-family: 'Armata', "Helvetica", sans-serif;
-  color: var(--text-colour);
+  color: var(--colour-text-colour);
   line-height: 1.4em;
   margin: calc(var(--base-size) * 2) 0 calc(var(--base-size));
 }
@@ -49,12 +49,12 @@ h3.sanstream-heading {
 
 .sanstream-special-text {
   font-family: 'Fira Code', monospace;
-  color: var(--text-colour);
+  color: var(--colour-text-colour);
 }
 
 .sanstream-body-text {
   font-family: 'Montserrat', serif;
-  color: var(--text-colour);
+  color: var(--colour-text-colour);
 }
 
 .sanstream-no-list-styles {

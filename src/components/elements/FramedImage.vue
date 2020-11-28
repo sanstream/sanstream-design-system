@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
 figure {
-  border: 1px solid var(--toned-down-border-colour);
+  border: 1px solid var(--colour-toned-down-border-colour);
   margin: 1em 0;
 }
 
