@@ -22,6 +22,10 @@ module.exports = {
       name: 'Elements',
       components: 'src/components/elements/[A-Z]*.vue',
     },
+    {
+      name: 'Patterns',
+      components: 'src/components/patterns/[A-Z]*.vue',
+    },
   ],
   webpackConfig: {
     module: {

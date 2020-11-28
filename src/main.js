@@ -3,6 +3,10 @@ import './layouts.css'
 import StandardLink from './components/elements/StandardLink'
 import StandardParagraph from './components/elements/StandardParagraph'
 import CodeExample from './components/elements/CodeExample'
+import DataMapper from './utils/dataMapper'
+import {
+  addCssVariables
+} from './design-tokens/tokens'
 
 /**
  * This file exports the Design System.
@@ -11,6 +15,7 @@ import CodeExample from './components/elements/CodeExample'
 // Define contexts to require
 const contexts = [
   require.context('./components/elements/', true, /\.vue$/),
+  require.context('./components/patterns/', true, /\.vue$/),
 ]
 
 // Define components
@@ -32,6 +37,12 @@ const SanstreamDesignSystem = {
 if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(SanstreamDesignSystem)
 }
+if (typeof window !== 'undefined') {
+  window.addEventListener('DOMContentLoaded', () => {
+    // add tokens as css variables to the DOM:
+    addCssVariables()
+  })
+}
 
 // Finally export as default
 export default SanstreamDesignSystem
@@ -41,5 +52,6 @@ export default SanstreamDesignSystem
 export {
   StandardLink,
   StandardParagraph,
-  CodeExample
+  CodeExample,
+  DataMapper
 }
