@@ -74,7 +74,7 @@ export default {
 li.spectrum-item {
   content: '';
   display: inline-block;
-  min-width: 4rem;
+  min-width: 3rem;
   width: calc((100% / 5) - 0.25rem);
   max-width: 6rem;
   margin-right: 0.25rem;
