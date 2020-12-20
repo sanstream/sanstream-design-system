@@ -1,8 +1,5 @@
 <template>
   <section>
-    <standard-paragraph>
-      {{dataMappers.description.getData(spectraData)}}
-    </standard-paragraph>
     <ol class="sanstream-no-list-styles">
       <li
         v-for="spectrumId in ordering"
@@ -36,7 +33,6 @@
 <script>
 import VueTypes from 'vue-types'
 import DataMapper from '../../utils/dataMapper'
-import StandardParagraph from '../elements/StandardParagraph'
 
 /**
  * Data visualisation used as part of 'That LGBTQIA+ identity explainer'.
@@ -44,7 +40,6 @@ import StandardParagraph from '../elements/StandardParagraph'
  * and displayed as a visualisation.
  */
 export default {
-  components: { StandardParagraph, },
   name: 'SpectrumPositionsGraph',
 
   props: {
