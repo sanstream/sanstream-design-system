@@ -40,7 +40,7 @@ import DataMapper from '../../utils/dataMapper'
  * and displayed as a visualisation.
  */
 export default {
-  name: 'SpectrumPositionsGraph',
+  name: 'SpectrumPositionGraphs',
 
   props: {
     ordering: VueTypes.arrayOf(VueTypes.string.isRequired).isRequired,
