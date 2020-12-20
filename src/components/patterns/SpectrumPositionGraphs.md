@@ -1,7 +1,7 @@
 An example of an **asexual transgender lesbian**:
 ```jsx
 <script>
-import DataMapper from '../../utils/dataMapper'
+import DataKraai from 'data-kraai'
 const ordering = [
   'genderIdentity',
   'bioSex',
@@ -10,37 +10,37 @@ const ordering = [
   'romanticAttraction',
 ]
 const dataMappers = {
-  'genderIdentity': new DataMapper({
+  'genderIdentity': new DataKraai({
     label: 'Gender identity',
     mapper: d => d.ratings.genderIdentity,
     dataRange: [-2, -1, 0, 1, 2],
     dataRangeLabels: ['man', null, null, null, 'woman'],
   }),
-  'bioSex': new DataMapper({
+  'bioSex': new DataKraai({
     label: 'Biological sex',
     mapper: d => d.ratings.biologicalSex,
     dataRange: [-2, -1, 0, 1, 2],
     dataRangeLabels: ['man', null, null, null, 'woman'],
   }),
-  'transition': new DataMapper({
+  'transition': new DataKraai({
     label: 'Gender transition',
     mapper: d => d.ratings.genderTransition,
     dataRange: [0, 1, 2, 4, 5],
     dataRangeLabels: ['fully (trans)', null, null, null, 'none (cis)'],
   }),
-  'sexualAttraction': new DataMapper({
+  'sexualAttraction': new DataKraai({
     label: 'Sexually attracted to',
     mapper: d => d.ratings.sexuallyAttractedTo,
     dataRange: [-2, -1, 0, 1, 2],
     dataRangeLabels: ['men', null, null, null, 'women'],
   }),
-  'romanticAttraction': new DataMapper({
+  'romanticAttraction': new DataKraai({
     label: 'Romantically attracted to',
     mapper: d => d.ratings.romanticallyAttractedTo,
     dataRange: [-2, -1, 0, 1, 2],
     dataRangeLabels: ['men', null, null, null, 'women'],
   }),
-  'description': new DataMapper({
+  'description': new DataKraai({
     mapper: d => d.description,
   }),
 }

@@ -3960,6 +3960,11 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
+data-kraai@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/data-kraai/-/data-kraai-0.0.1.tgz#5d53767d3edcf88480fe4289c2ff7fdc50aae59a"
+  integrity sha512-9AJDre+Tc+RUKxa4pg4nHcDLykh4ZrM4/I1nc5Nov3RtWwVMKvNRPAEol70ogCm3seKmOKQAySrxZKglCwcWMA==
+
 date-fns@^1.27.2:
   version "1.30.1"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"

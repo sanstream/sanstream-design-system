@@ -32,7 +32,7 @@
 
 <script>
 import VueTypes from 'vue-types'
-import DataMapper from '../../utils/dataMapper'
+import DataKraai from 'data-kraai'
 
 /**
  * Data visualisation used as part of 'That LGBTQIA+ identity explainer'.
@@ -44,7 +44,7 @@ export default {
 
   props: {
     ordering: VueTypes.arrayOf(VueTypes.string.isRequired).isRequired,
-    dataMappers: VueTypes.objectOf(VueTypes.instanceOf(DataMapper).isRequired).isRequired,
+    dataMappers: VueTypes.objectOf(VueTypes.instanceOf(DataKraai).isRequired).isRequired,
     spectraData: VueTypes.object,
   },
 
