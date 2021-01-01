@@ -56,6 +56,8 @@ button.variant-textual {
   border: 0;
   box-shadow: none;
   background-color: inherit;
+  padding: 0;
+  vertical-align: middle;
   color: var(--colour-sanstream-orange);
 }
 
