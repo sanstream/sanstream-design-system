@@ -38,6 +38,8 @@ import DataKraai from 'data-kraai'
  * Data visualisation used as part of 'That LGBTQIA+ identity explainer'.
  * A person's LGBTQIA+ identity is mapped onto a data structure (see below)
  * and displayed as a visualisation.
+ *
+ * Plese note that this component uses DataKraai to map data into itself.
  */
 export default {
   name: 'SpectrumPositionGraphs',
@@ -84,7 +86,7 @@ li.spectrum-item:before {
 }
 
 li.spectrum-item[data-is-active="true"]:before {
-  background: var(--colour-range-green);
+  background: var(--colour-range-orange);
 }
 
 li.spectrum-item[data-is-applicable="false"]:before {

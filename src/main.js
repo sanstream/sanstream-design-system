@@ -3,7 +3,6 @@ import './layouts.css'
 import StandardLink from './components/elements/StandardLink'
 import StandardParagraph from './components/elements/StandardParagraph'
 import CodeExample from './components/elements/CodeExample'
-import DataMapper from './utils/dataMapper'
 import Suggestion from './utils/suggestion'
 import {
   addCssVariables
@@ -54,6 +53,5 @@ export {
   StandardLink,
   StandardParagraph,
   CodeExample,
-  DataMapper,
   Suggestion
 }
