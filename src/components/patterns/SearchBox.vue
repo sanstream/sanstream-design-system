@@ -44,9 +44,18 @@ export default {
     }
   },
 
+  watch: {
+    defaultValue (value) {
+      if (value) {
+        this.searchTerm = value
+      }
+    },
+  },
+
   props: {
     buttonLabel: VueTypes.string.def('Find'),
     placeholderText: VueTypes.string.def('Type here what you wanna find.'),
+    defaultValue: VueTypes.string,
     onSubmit: VueTypes.func.def(() => {
       console.warn('no onSubmit applied yet')
     }),

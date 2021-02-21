@@ -60,7 +60,6 @@ export default {
       const results = {}
       this.ordering.forEach(spectrumId => {
         const parsedData = this.dataMappers[spectrumId].getData(this.spectraData)
-        console.log(parsedData)
         results[spectrumId] = {
           type: Array.isArray(parsedData) ? 'array' : typeof parsedData,
           parsedData,
