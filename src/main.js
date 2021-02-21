@@ -7,6 +7,7 @@ import Suggestion from './utils/suggestion'
 import {
   addCssVariables
 } from './design-tokens/tokens'
+import DataKraai from 'data-kraai'
 
 /**
  * This file exports the Design System.
@@ -53,5 +54,6 @@ export {
   StandardLink,
   StandardParagraph,
   CodeExample,
-  Suggestion
+  Suggestion,
+  DataKraai
 }

@@ -1,16 +1,16 @@
 <template>
   <form @submit="sendSearchTerm($event)">
     <input
-      type="text"
+      type="search"
       autocomplete="off"
       autocorrect="off"
-      list="ice-cream-flavors"
+      list="suggestions"
       class="sanstream-special-text"
       v-model="searchTerm"
       :placeholder="placeholderText"
       @keydown.enter="sendSearchTerm($event)"
     />
-    <datalist id="ice-cream-flavors">
+    <datalist id="suggestions">
       <option
         v-for="suggestion in suggestions"
         :key="suggestion.value"
@@ -71,7 +71,7 @@ form {
   gap: 0.25em;
 }
 
-form input[type="text"] {
+form input[type="search"] {
   flex: 1 1;
   border: 2px solid var(--colour-darkest-colour);
   border-radius: 3px;
@@ -82,7 +82,7 @@ form input[type="text"] {
   padding: 0 calc(var(--base-size) * 0.5);
 }
 
-form input[type="text"]:focus {
+form input[type="search"]:focus {
   outline: none;
 }
 

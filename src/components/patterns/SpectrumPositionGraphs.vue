@@ -40,6 +40,11 @@ import DataKraai from 'data-kraai'
  * and displayed as a visualisation.
  *
  * Plese note that this component uses DataKraai to map data into itself.
+ * In order to make sure that the property validators do not fail import
+ * the DataKraai class provided along with this package, like so:g
+ * ```
+ * import { DataKraai } from 'sanstream-design-system'
+ * ```
  */
 export default {
   name: 'SpectrumPositionGraphs',
