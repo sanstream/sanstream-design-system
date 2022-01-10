@@ -6,7 +6,8 @@
       autocorrect="off"
       list="suggestions"
       class="sanstream-special-text"
-      v-model="searchTerm"
+      @input="handleTextInput"
+      :value="searchTerm"
       :placeholder="placeholderText"
       @keydown.enter="sendSearchTerm($event)"
     />
@@ -38,24 +39,15 @@ export default {
     Button,
   },
 
-  data () {
-    return {
-      searchTerm: '',
-    }
-  },
-
-  watch: {
-    defaultValue (value) {
-      if (value) {
-        this.searchTerm = value
-      }
-    },
+  model: {
+    prop: 'searchTerm',
+    event: 'input',
   },
 
   props: {
     buttonLabel: VueTypes.string.def('Find'),
     placeholderText: VueTypes.string.def('Type here what you wanna find.'),
-    defaultValue: VueTypes.string,
+    searchTerm: VueTypes.string,
     onSubmit: VueTypes.func.def(() => {
       console.warn('no onSubmit applied yet')
     }),
@@ -68,6 +60,10 @@ export default {
         event.preventDefault()
       }
       this.onSubmit(this.searchTerm)
+    },
+
+    handleTextInput (event) {
+      this.$emit('input', event.target.value)
     },
   },
 }
@@ -87,8 +83,9 @@ form input[type="search"] {
   box-shadow: none;
   color: var(--colour-text-colour);
   background-color: var(--colour-lightest-colour);
-  line-height: calc(var(--base-size) * 1.2);
+  line-height: calc(var(--base-size) * 2);
   padding: 0 calc(var(--base-size) * 0.5);
+  font-size: 1rem;
 }
 
 form input[type="search"]:focus {
@@ -105,5 +102,6 @@ form input[type="text"]:hover {
 
 form button {
   flex: 0 0;
+  font-size: 1rem;
 }
 </style>
